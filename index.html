@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8" />
 <title>Pinnacle Voiceover Services</title>
 </head>
 
 <style>
 
 body {
-	background-color: black;
+	background-color: #e2e2e2;
 	text-align: center;
 	font-family: Tahoma, sans-serif;
+	background-image: url('bg.png');
 }
 
 h1 {
 	text-align: center;
-	color: #faf8b4;
+	color: #black;
 	font-size: 45px;
 	font-weight: 250;
 	font-family: Tahoma, sans-serif;
@@ -23,7 +25,7 @@ h1 {
 p {
 	text-align: center;
 	font-size: 18px;
-	color: #faf8b4;
+	color: #black;
 	font-weight: 200;
 	font-family: Tahoma, sans-serif;
 	width: 75%; 
@@ -33,15 +35,92 @@ p {
 img.header1 {
 	width: 42%;
 	height: 45%;
+	margin-top: 0;
+	border-radius: 30px;
+	border: 3px solid #faf8b4;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+ul {
+  list-style-type: none;
+  margin: 1%;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #333;
+  top: 10px;
+  width: 160px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #565656;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 34px;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover:not(active) {background-color: #9a9a9a;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
 </style>
 
 
 <body>
+
+<ul>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Testimonials</a>
+  <li><a href="contact.asp">Contact</a></li>
+</ul>
+
 <img class="header1" src="header.png" alt="Pinnacle Voiceover Services">
 <br>
 <br>
-<h1 style="color: #faf8b4; style="width: 75%; padding-left: 12.5%;">
+<h1 style="style="width: 75%; padding-left: 12.5%;">
 Website under construction.
 </h1>
 <br>
@@ -50,28 +129,27 @@ I might be working hard to get it running, or I might be busy playing Club Pengu
 </p>
 <br>
 <br>
-<p>
-In the meantime, if you have a project that requires a professional voiceover talent, you can contact me directly using the form below.
-</p>
 <br>
 <br>
+
+<h1 style="style="width: 75%; padding-left: 12.5%;">
+Contact Me
+</h1>
 
 <form action="mailto:hello@pinnaclevoiceover.ca" 
 	method=”POST”
 	enctype=”multipart/form-data”
 	name=”EmailForm”
-	style="color: #faf8b4; style="width: 75%; padding-left: 12.5%;">
+	style="style="width: 75%; padding-left: 12.5%;">
 
-Name:
 <br>
 <br>
-<input type=”text” size=”19″ name=”ContactName”>
-<br>
-<br>
-Describe your project or inquiry:
-<br> 
-<br>
-<textarea name=”ContactInquiry” rows=”20″ cols=”40″>
+<p>
+If you have a project that requires a professional voiceover talent, you can contact me directly using the form below.
+</p>
+<p>Name: <textarea name="Name" rows="1" cols="25"></textarea></p>
+<p>Email Address: <textarea name="Email" rows="1" cols="40"></textarea></p>
+<textarea name="Inquiry" rows="10" cols="60" maxlength="1200">Please enter your message here
 </textarea>
 <br>
 <br>
