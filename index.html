@@ -127,8 +127,14 @@ li.dropdown {
   background-color: #565656;
 }
 
-.hs-form fieldset {
-max-width: 75%;
+.flex-container {
+display: flex;
+align-items: center;
+width: 100%;
+}
+.flex-container > div {
+width: 75%;
+margin: 5px;
 }
 
 </style>
@@ -169,6 +175,7 @@ Contact Me
 If you have a project that requires a professional voiceover talent, you can contact me directly using the form below.
 </p>
 
+<div class="flex-container">
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 <script max-width="75%">
   hbspt.forms.create({
@@ -177,6 +184,7 @@ If you have a project that requires a professional voiceover talent, you can con
 	formId: "6199bf6c-1af9-42f1-ab93-b0840609f0cd"
 });
 </script>
+</div>
 
 <br>
 <br>
